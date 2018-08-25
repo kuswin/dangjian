@@ -1,0 +1,349 @@
+{
+	"@platforms": [
+		"android",
+		"iPhone",
+		"iPad"
+	],
+	"id": "H55F7FA80",/*应用的标识，创建应用时自动生成，勿手动修改*/
+	"name": "党建A货",/*应用名称，程序桌面图标名称*/
+	"version": {
+		"name": "1.0",/*应用版本名称*/
+		"code": ""
+	},
+	"description": "",/*应用描述信息*/
+	"icons": {
+		"72": "icon.png"
+	},
+	"launch_path": "index.html",/*应用的入口页面，默认为根目录下的index.html；支持网络地址，必须以http://或https://开头*/
+	"developer": {
+		"name": "",/*开发者名称*/
+		"email": "",/*开发者邮箱地址*/
+		"url": ""
+	},
+	"permissions": {
+		"Messaging": {
+			"description": "短彩邮件插件"
+		},
+		"Cache": {
+			"description": "管理应用缓存"
+		},
+		"Console": {
+			"description": "跟踪调试输出日志"
+		},
+		"Contacts": {
+			"description": "访问系统联系人信息"
+		},
+		"Events": {
+			"description": "应用扩展事件"
+		},
+
+		"Speech": {
+			"description": "管理语音识别插件"
+		}
+	},
+	"plus": {
+		"splashscreen": {
+			"autoclose": true,/*是否自动关闭程序启动界面，true表示应用加载应用入口页面后自动关闭；false则需调plus.navigator.closeSplashscreen()关闭*/
+			"waiting": true
+		},
+		"popGesture": "close",/*设置应用默认侧滑返回关闭Webview窗口，"none"为无侧滑返回功能，"hide"为侧滑隐藏Webview窗口。参考http://ask.dcloud.net.cn/article/102*/
+		"runmode": "normal",/*应用的首次启动运行模式，可取liberate或normal，liberate模式在第一次启动时将解压应用资源（Android平台File API才可正常访问_www目录）*/
+		"signature": "Sk9JTiBVUyBtYWlsdG86aHIyMDEzQGRjbG91ZC5pbw==",/*可选，保留给应用签名，暂不使用*/
+		"distribute": {
+			"plugins": {
+				"oauth": {},
+				"maps": {}
+			},
+			"apple": {
+				"appid": "",/*iOS应用标识，苹果开发网站申请的appid，如io.dcloud.HelloH5*/
+				"mobileprovision": "",/*iOS应用打包配置文件*/
+				"password": "",/*iOS应用打包个人证书导入密码*/
+				"p12": "",/*iOS应用打包个人证书，打包配置文件关联的个人证书*/
+				"devices": "universal",/*iOS应用支持的设备类型，可取值iphone/ipad/universal*/
+				"frameworks": []
+			},
+			"google": {
+				"packagename": "",/*Android应用包名，如io.dcloud.HelloH5*/
+				"keystore": "",/*Android应用打包使用的密���库文件*/
+				"password": "",/*Android应用打包使用密钥库中证书的密码*/
+				"aliasname": "",/*Android应用打包使用密钥库中证书的别名*/
+				"permissions": [
+					"<uses-permission android:name=\"android.permission.RECORD_AUDIO\"/>",
+					"<uses-permission android:name=\"android.permission.GET_ACCOUNTS\"/>",
+					"<uses-permission android:name=\"android.permission.CHANGE_NETWORK_STATE\"/>",
+					"<uses-permission android:name=\"android.permission.READ_CONTACTS\"/>",
+					"<uses-permission android:name=\"android.permission.INTERNET\"/>",
+					"<uses-permission android:name=\"android.permission.READ_PHONE_STATE\"/>",
+					"<uses-permission android:name=\"android.permission.VIBRATE\"/>",
+					"<uses-permission android:name=\"android.permission.WAKE_LOCK\"/>",
+					"<uses-permission android:name=\"android.permission.FLASHLIGHT\"/>",
+					"<uses-permission android:name=\"android.permission.CALL_PHONE\"/>",
+					"<uses-permission android:name=\"android.permission.ACCESS_WIFI_STATE\"/>",
+					"<uses-feature android:name=\"android.hardware.camera.autofocus\"/>",
+					"<uses-feature android:name=\"android.hardware.camera\"/>",
+					"<uses-permission android:name=\"android.permission.WRITE_CONTACTS\"/>",
+					"<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\"/>",
+					"<uses-permission android:name=\"android.permission.CAMERA\"/>"
+				]
+			},
+			"orientation": [
+				"portrait-primary"
+			],/*应用支持的方向，portrait-primary：竖屏正方向；portrait-secondary：竖屏反方向；landscape-primary：横屏正方向；landscape-secondary：横屏反方向*/
+			"icons": {
+				"ios": {
+					"prerendered": true, /*应用图标是否已经高亮处理，在iOS6及以下设备上有效*/
+					/*应用图标，分辨率：512x512，用于自动生成各种尺寸程序图标*/
+					"iphone": {
+						"normal": "", /*iPhone3/3GS程序图标，分辨率：57x57*/
+						"retina": "", /*iPhone4程序图标，分辨率：114x114*/
+						"retina7": "", /*iPhone4S/5/6程序图标，分辨率：120x120*/
+						"retina8": "", /*iPhone6 Plus程序图标，分辨率：180x180*/
+						"spotlight-normal": "", /*iPhone3/3GS Spotlight搜索程序图标，分辨率：29x29*/
+						"spotlight-retina": "", /*iPhone4 Spotlight搜索程序图标，分辨率：58x58*/
+						"spotlight-retina7": "", /*iPhone4S/5/6 Spotlight搜索程序图标，分辨率：80x80*/
+						"settings-normal": "", /*iPhone4设置页面程序图标，分辨率：29x29*/
+						"settings-retina": "", /*iPhone4S/5/6设置页面程序图标，分辨率：58x58*/
+						"settings-retina8": ""
+					},
+					"ipad": {
+						"normal": "", /*iPad普通屏幕程序图标，分辨率：72x72*/
+						"retina": "", /*iPad高分屏程序图标，分辨率：144x144*/
+						"normal7": "", /*iPad iOS7程序图标，分辨率：76x76*/
+						"retina7": "", /*iPad iOS7高分屏程序图标，分辨率：152x152*/
+						"spotlight-normal": "", /*iPad Spotlight搜索程序图标，分辨率：50x50*/
+						"spotlight-retina": "", /*iPad高分屏Spotlight搜索程序图标，分辨率：100x100*/
+						"spotlight-normal7": "",/*iPad iOS7 Spotlight搜索程序图标，分辨率：40x40*/
+						"spotlight-retina7": "",/*iPad iOS7高分屏Spotlight搜索程序图标，分辨率：80x80*/
+						"settings-normal": "",/*iPad设置页面程序图标，分辨率：29x29*/
+						"settings-retina": ""
+					},
+					"appstore": "F:/H5/item/党建原型和切图/appicon/180x180.png"
+				},
+				"android": {
+					"mdpi": "F:/H5/item/dangjianqie/appicon/58x58.png", /*普通屏程序图标，分辨率：48x48*/
+					"ldpi": "F:/H5/item/dangjianqie/appicon/58x58.png", /*大屏程序图标，分辨率：48x48*/
+					"hdpi": "F:/H5/item/dangjianqie/appicon/80x80.png", /*高分屏程序图标，分辨率：72x72*/
+					"xhdpi": "F:/H5/item/dangjianqie/appicon/87x87.png",/*720P高分屏程序图标，分辨率：96x96*/
+					"xxhdpi": "F:/H5/item/dangjianqie/appicon/120x120.png",
+					"xxxhdpi": "F:/H5/item/dangjianqie/appicon/180x180.png"
+				}
+			},
+			"splashscreen": {
+				"ios": {
+					"iphone": {
+						"default": "", /*iPhone3启动图片选，分辨率：320x480*/
+						"retina35": "",/*3.5英寸设备(iPhone4)启动图片，分辨率：640x960*/
+						"retina40": "",/*4.0 英寸设备(iPhone5/iPhone5s)启动图片，分辨率：640x1136*/
+						"retina47": "",/*4.7 英寸设备(iPhone6)启动图片，分辨率：750x1334*/
+						"retina55": "",/*5.5 英寸设备(iPhone6 Plus)启动图片，分辨率：1242x2208*/
+						"retina55l": ""
+					},
+					"ipad": {
+						"portrait": "", /*iPad竖屏启动图片，分辨率：768x1004*/
+						"portrait-retina": "",/*iPad高分屏竖屏图片，分辨率：1536x2008*/
+						"landscape": "", /*iPad横屏启动图片，分辨率：1024x748*/
+						"landscape-retina": "", /*iPad高分屏横屏启动图片，分辨率：2048x1496*/
+						"portrait7": "", /*iPad iOS7竖屏启动图片，分辨率：768x1024*/
+						"portrait-retina7": "",/*iPad iOS7高分屏竖屏图片，分辨率：1536x2048*/
+						"landscape7": "", /*iPad iOS7横屏启动图片，分辨率：1024x768*/
+						"landscape-retina7": ""
+					}
+				},
+				"android": {
+					"mdpi": "", /*普通屏启动图片，分辨率：240x282*/
+					"ldpi": "", /*大屏启动图片，分辨率：320x442*/
+					"hdpi": "F:/H5/item/dangjianqie/loading页/480.png", /*高分屏启动图片，分辨率：480x762*/
+					"xhdpi": "F:/H5/item/dangjianqie/loading页/LaunchImage-736h@3x.png", /*720P高分屏启动图片，分辨率：720x1242*/
+					"xxhdpi": "F:/H5/item/dangjianqie/loading页/LaunchImage-667h@2x.png"
+				}
+			}
+		},"ads":{"rp":false,"splash":false,"push":false},"adid":""
+	},
+	"dependencies":{
+		"pages": {
+			"index.html": {
+				"href": "index.html",
+				"priority": 0
+			}
+		},
+		"idle": {
+			"resources": [
+				"src/img/assets/banner.png",
+				"src/view/Liangshen.vue",
+				"src/view/news.vue",
+				"src/img/assets/banner01.png",
+				"src/view/comment.vue",
+				"src/img/assets/icon3.png",
+				"dist/static/js/vendor.acf2ea4fb2377960e3cd.js",
+				"src/view/minyi.vue",
+				"src/img/assets/right.png",
+				"dist/static/js/manifest.3ad1d5771e9b13dbdad2.js.map",
+				"src/img/assets/wechat.png",
+				"package.json",
+				"dist/static/js/app.8d7aaec9a3b4659be8be.js.map",
+				"src/img/1/drawable-xxhdpi/logo.png",
+				"config/dev.env.js",
+				"dist/static/js/manifest.3ad1d5771e9b13dbdad2.js",
+				"package-lock.json",
+				"README.md",
+				"src/view/sxh.vue",
+				"src/img/assets/upload.png",
+				"src/img/dangjian_files/getscript",
+				"src/view/personal.vue",
+				"src/img/1/drawable-xxhdpi/icon_05.png",
+				"src/view/Yidaintopng.vue",
+				"src/img/1/drawable-xhdpi/icon_01.png",
+				"src/img/1/drawable-hdpi/icon_01@2x.png",
+				"src/view/Jifen.vue",
+				"dist/static/js/vendor.acf2ea4fb2377960e3cd.js.map",
+				"build/webpack.dev.conf.js",
+				"src/style/init.css",
+				"src/view/Neye.vue",
+				"src/assets/logo.png",
+				"dist/static/img/wechat.5ae475d.png",
+				"src/img/assets/icon2.png",
+				"src/img/1/drawable-mdpi/logo.png",
+				"src/img/assets/yaowenicon.png",
+				"src/main.js",
+				"test/e2e/nightwatch.conf.js",
+				"src/view/cpdy.vue",
+				"src/img/1/drawable-mdpi/banner.png",
+				"src/view/Jiming.vue",
+				"src/img/1/drawable-xxhdpi/icon_04.png",
+				"config/index.js",
+				"src/view/everyname.vue",
+				"src/img/1/drawable-xxhdpi/banner.png",
+				"src/img/assets/xgmm.png",
+				"src/style/login.scss",
+				"src/img/1/drawable-hdpi/channelType@2x.png",
+				"src/img/1/drawable-xhdpi/icon_04.png",
+				"src/img/1/drawable-xhdpi/bt_bg.png",
+				"src/components/Home.vue",
+				"src/img/assets/bg1x1.png",
+				"src/img/1/drawable-xxhdpi/icon_03.png",
+				"src/view/Live.vue",
+				"src/img/assets/icon1.png",
+				"test/e2e/custom-assertions/elementCount.js",
+				"src/base/Tab.vue",
+				"build/logo.png",
+				"src/img/dangjian_files/1",
+				"src/img/1/drawable-mdpi/bt_bg.png",
+				"src/img/1/drawable-hdpi/banner@2x.png",
+				"src/img/1/drawable-xhdpi/banner01.png",
+				"src/view/Load.vue",
+				"src/img/1/drawable-mdpi/banner01.png",
+				"src/img/assets/logo.png",
+				"src/img/assets/pass.png",
+				"src/img/dangjian.html",
+				"src/App.vue",
+				"config/prod.env.js",
+				"src/components/Inform.vue",
+				"dist/static/img/tese.1216723.png",
+				"build/webpack.base.conf.js",
+				"src/view/hudong.vue",
+				"src/view/map.vue",
+				"src/img/1/drawable-xxhdpi/banner01.png",
+				"src/img/assets/icon_02.png",
+				"src/img/1/drawable-xxhdpi/icon_01.png",
+				"src/img/1/drawable-hdpi/icon_02@2x.png",
+				"src/img/1.png",
+				"src/view/join.vue",
+				"src/img/1/drawable-xhdpi/icon_05.png",
+				"src/img/assets/person.png",
+				"src/img/assets/icon4.png",
+				"src/img/assets/yuan.png",
+				"test/unit/specs/HelloWorld.spec.js",
+				"src/img/assets/icon_06.png",
+				"src/img/1/drawable-xhdpi/banner.png",
+				"src/img/1/drawable-xxhdpi/bt_bg.png",
+				"src/img/1/drawable-mdpi/icon_02.png",
+				"src/img/assets/icon_04.png",
+				"src/view/Xiuge.vue",
+				"src/img/assets/checkbox.png",
+				"build/check-versions.js",
+				"src/img/assets/icon_05.png",
+				"src/img/1/drawable-hdpi/icon_03@2x.png",
+				"src/view/Tese.vue",
+				"src/view/study.vue",
+				"test/unit/jest.conf.js",
+				"src/util/api.js",
+				"dist/static/img/timg.4996126.jpg",
+				"dist/static/img/bt_bg.fafdf02.png",
+				"src/img/1/drawable-hdpi/icon_04@2x.png",
+				"src/img/1/drawable-mdpi/icon_06.png",
+				"src/img/111.jpg",
+				"src/img/assets/bg5x3.png",
+				"src/img/assets/bg2x1.png",
+				"src/view/zhangge.vue",
+				"test/unit/setup.js",
+				"src/img/1/drawable-xhdpi/icon_03.png",
+				"src/view/gejie.vue",
+				"src/img/assets/wenhao.png",
+				"src/view/everyph.vue",
+				"src/img/2.png",
+				"src/img/assets/icon_03.png",
+				"src/view/jiaodang.vue",
+				"config/test.env.js",
+				"src/img/1/drawable-mdpi/icon_03.png",
+				"src/img/assets/icon5.png",
+				"src/img/1/drawable-hdpi/banner01@2x.png",
+				"src/img/assets/reviewing.png",
+				"src/img/dangjian_files/api",
+				"dist/static/img/banner01.c315a2a.png",
+				"src/img/1/drawable-mdpi/icon_01.png",
+				"src/img/3.png",
+				"src/view/xdzj2.vue",
+				"src/img/assets/timg.jpg",
+				"src/img/assets/alipay.png",
+				"src/view/xdzj.vue",
+				"src/img/dangjian_files/o_1cb1fdsbt131n19ei1f0aeofk4am.jpg",
+				"src/img/1/drawable-hdpi/icon_05@2x.png",
+				"src/img/dangjian_files/font_626753_haj71adypfmbzkt9.css",
+				"src/img/assets/banner1.png",
+				"test/e2e/specs/test.js",
+				"src/img/assets/lxjf.png",
+				"dist/static/css/app.9dbaa2eefdc457459637946a61b30da7.css",
+				"src/img/zan.png",
+				"src/img/1/drawable-xxhdpi/icon_02.png",
+				"dist/index.html",
+				"src/img/1/drawable-mdpi/icon_05.png",
+				"src/view/detailG.vue",
+				"src/img/1/drawable-hdpi/bt_bg@2x.png",
+				"build/utils.js",
+				"src/img/1/drawable-xxhdpi/icon_06.png",
+				"src/view/zhijian.vue",
+				"src/view/review.vue",
+				"src/img/1/drawable-xhdpi/icon_02.png",
+				"src/util/$axios.js",
+				"src/router/index.js",
+				"src/img/1/drawable-xhdpi/icon_06.png",
+				"src/img/1/drawable-hdpi/logo.png",
+				"src/img/assets/icon_01.png",
+				"src/img/1/drawable-xhdpi/logo.png",
+				"dist/static/js/app.8d7aaec9a3b4659be8be.js",
+				"src/img/1/drawable-mdpi/icon_04.png",
+				"build/vue-loader.conf.js",
+				"test/e2e/runner.js",
+				"dist/static/css/app.9dbaa2eefdc457459637946a61b30da7.css.map",
+				"src/img/assets/bt_bg.png",
+				"src/img/assets/playicon.png",
+				"src/img/assets/bg4x3.png",
+				"build/build.js",
+				"src/img/assets/banner02.png",
+				"src/view/xiumi.vue",
+				"src/base/MyHeader.vue",
+				"src/components/My.vue",
+				"src/img/1/drawable-hdpi/icon_06@2x.png",
+				"src/view/mzpy.vue",
+				"src/view/huif.vue",
+				"src/view/dshij.vue",
+				"src/img/assets/jifen.png",
+				"src/img/assets/tese.png",
+				"src/img/assets/redflag.png",
+				"build/webpack.prod.conf.js",
+				"src/img/assets/nopass.png"
+			]
+		}
+	},
+	"unpackage":[]
+}
